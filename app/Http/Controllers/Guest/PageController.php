@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function travels()
+    public function index()
     {
-        return view('travels');
+        return view('index');
     }
 }
