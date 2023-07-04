@@ -13,6 +13,7 @@
         @yield('contents')
     </div>
 
+    <h2>Prova</h2>
 </body>
 
 </html>
