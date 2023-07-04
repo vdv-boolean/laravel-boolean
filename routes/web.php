@@ -15,5 +15,5 @@ use App\Http\Controllers\Guest\TravelController;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [TravelController::class, 'index']);
 Route::resource('travels', TravelController::class);
