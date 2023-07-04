@@ -59,12 +59,12 @@ class TravelController extends Controller
     {
         // Validate the data
         $request->validate([
-            'date'           => 'required|string|max:100',
-            'title'           => 'required|string|max:200',
-            'text'          => 'required|string|max:100',
-            'image'       => 'required|date',
-            'country'            => 'required|string|max:100',
-            'address'     => 'required|string|max:1000',
+            'title'     => 'required|string|max:200',
+            'date'      => 'required|date',
+            'text'      => 'required|string|max:1000',
+            'image'     => 'required|string|max:1000',
+            'country'   => 'required|string|max:1000',
+            'address'   => 'required|string|max:100',
         ]);
 
         $data = $request->all();
