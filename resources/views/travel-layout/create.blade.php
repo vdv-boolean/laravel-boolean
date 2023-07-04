@@ -45,7 +45,7 @@
     </div>
   
     <div class="mb-3">
-        <label for="image" class="form-label">Immagine Posto</label>
+        <label for="image" class="form-label">Indirizzo</label>
         <input
             type="text"
             class="form-control @error('image') is-invalid @enderror"
@@ -72,7 +72,7 @@
     </div>
   
     <div class="mb-3">
-        <label for="address" class="form-label">Indirizzo</label>
+        <label for="address" class="form-label">Descrizione Viaggio</label>
         <textarea
             class="form-control @error('address') is-invalid @enderror"
             id="address"
