@@ -2,7 +2,7 @@
 
 return [
     [
-        "title" => "china express",
+        "title" => "China express",
         "text" => "China is the world's most populous country. It has a continuous culture stretching back nearly 4,000 years and originated many of the foundations of the modern world. The People's Republic of China was founded in 1949 after the Communist Party defeated the nationalist Kuomintang, who retreated to Taiwan, creating two rival Chinese states - the People's Republic on the mainland and the Republic of China on Taiwan. After stagnating for decades under the rigid totalitarian socialism of founder Mao Zedong, China reformed its economy along partly-capitalist lines to make it one of the world's fastest-growing, as well a leading exporter.",
         "image" => "https://picsum.photos/seed/picsum/200/300",
         "country" => "China",
