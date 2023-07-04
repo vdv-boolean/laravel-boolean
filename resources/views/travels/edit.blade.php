@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('contents')
-    <h1>Inserisci un nuovo Travel</h1>
+    <h1>Modifica Travel</h1>
     <form method="POST" action="{{ route('travels.update', ['travel' => $travel->id]) }}">
         @csrf
         @method('PUT')
@@ -13,21 +13,21 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="date" class="form-label">Data</label>
+            <label for="date" class="form-label">Data Viaggio</label>
             <input type="text" class="form-control @error('date') is-invalid @enderror" id="date" name="date" value="{{ old('date', $travel->date) }}">
             <div class="invalid-feedback">
                 @error('date') {{ $message }} @enderror
             </div>
         </div>
         <div class="mb-3">
-            <label for="text" class="form-label">Testo</label>
-            <input type="text" class="form-control @error('text') is-invalid @enderror" id="text" name="text" value="{{ old('text', $travel->text) }}">
+            <label for="address" class="form-label">Indirizzo</label>
+            <input type="text" class="form-control @error('address') is-invalid @enderror" id="address" name="address" value="{{ old('address', $travel->address) }}">
             <div class="invalid-feedback">
-                @error('text') {{ $message }} @enderror
+                @error('address') {{ $message }} @enderror
             </div>
         </div>
         <div class="mb-3">
-            <label for="image" class="form-label">Immagine</label>
+            <label for="image" class="form-label">Immagine Posto</label>
             <input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image" value="{{ old('image', $travel->image) }}">
             <div class="invalid-feedback">
                 @error('image') {{ $message }} @enderror
@@ -41,10 +41,10 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="address" class="form-label">Indirizzo</label>
-            <input type="text" class="form-control @error('address') is-invalid @enderror" id="address" name="address" value="{{ old('address', $travel->address) }}">
+            <label for="text" class="form-label">Descrizione</label>
+            <input type="text" class="form-control @error('text') is-invalid @enderror" id="text" name="text" value="{{ old('text', $travel->text) }}">
             <div class="invalid-feedback">
-                @error('address') {{ $message }} @enderror
+                @error('text') {{ $message }} @enderror
             </div>
         </div>
         <button class="btn btn-primary">Salva</button>
