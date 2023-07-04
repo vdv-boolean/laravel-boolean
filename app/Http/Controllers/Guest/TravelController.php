@@ -23,12 +23,12 @@ class TravelController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title'           => 'required|string|max:200',
-            'date'           => 'required|string|max:100',
-            'description'     => 'required|string|max:1000',
-            'image'           => 'required|string|max:1000',
-            'country'       => 'required|date',
-            'address'            => 'required|string|max:100',
+            'title'         => 'required|string|max:200',
+            'date'          => 'required|date',
+            'description'   => 'required|string|max:1000',
+            'image'         => 'required|string|max:1000',
+            'country'       => 'required|string|max:1000',
+            'address'       => 'required|string|max:100',
         ]);
 
         $data = $request->all();
