@@ -26,7 +26,7 @@ class TravelController extends Controller
             'title'           => 'required|string|max:200',
             'date'           => 'required|string|max:100',
             'description'     => 'required|string|max:1000',
-            'thumb'           => 'required|string|max:1000',
+            'image'           => 'required|string|max:1000',
             'country'       => 'required|date',
             'address'            => 'required|string|max:100',
         ]);
@@ -42,7 +42,7 @@ class TravelController extends Controller
         $newTravels->address = $data['address'];
         $newTravels->save();
 
-        return redirect()->route('travels.show', ['comic' => $newTravels->id]);
+        return redirect()->route('travels.show', ['travel' => $newTravels->id]);
     }
 
     public function show(Travel $travel)

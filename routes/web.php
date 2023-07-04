@@ -14,5 +14,6 @@ use App\Http\Controllers\Guest\TravelController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', [PageController::class, 'index']);
 Route::resource('travels', TravelController::class);
