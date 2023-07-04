@@ -10,7 +10,7 @@ class TravelController extends Controller
 {
     public function index()
     {
-        $travels = Travel::paginate(5);
+        $travels = Travel::all();
 
         return view('travels.index', compact('travels'));
     }
