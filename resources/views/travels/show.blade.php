@@ -10,5 +10,11 @@
         <a class="btn
         btn-warning" href="{{ route('travels.edit', ['travel' => $travel->id]) }}">EDIT
         </a>
+        <form action="{{route('travels.destroy', ['travel' => $travel->id ])}}" method="post">
+            @csrf
+            @method('delete')
+            <button class="btn btn-primary">Delete</button>
+        </form>
+        
     </div>
 @endsection
