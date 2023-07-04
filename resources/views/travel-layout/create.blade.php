@@ -17,84 +17,69 @@
     </div>
   
     <div class="mb-3">
-      <label for="thumb" class="form-label">Data Viaggio</label>
+      <label for="date" class="form-label">Data Viaggio</label>
       <input
           type="text"
-          class="form-control @error('thumb') is-invalid @enderror"
-          id="thumb"
-          name="thumb"
-          value="{{ old('thumb') }}"
+          class="form-control @error('date') is-invalid @enderror"
+          id="date"
+          name="date"
+          value="{{ old('date') }}"
       >
       <div class="invalid-feedback">
-          @error('thumb') {{ $message }} @enderror
+          @error('date') {{ $message }} @enderror
       </div>
   </div>
   
     <div class="mb-3">
-        <label for="price" class="form-label">Descrizione Viaggio</label>
+        <label for="text" class="form-label">Descrizione Viaggio</label>
         <input
             type="text"
-            class="form-control @error('price') is-invalid @enderror"
-            id="price"
-            name="price"
-            value="{{ old('price') }}"
+            class="form-control @error('text') is-invalid @enderror"
+            id="text"
+            name="text"
+            value="{{ old('text') }}"
         >
         <div class="invalid-feedback">
-            @error('price') {{ $message }} @enderror
+            @error('text') {{ $message }} @enderror
         </div>
     </div>
   
     <div class="mb-3">
-        <label for="series" class="form-label">Immagine Posto</label>
+        <label for="image" class="form-label">Immagine Posto</label>
         <input
             type="text"
-            class="form-control @error('series') is-invalid @enderror"
-            id="series"
-            name="series"
-            value="{{ old('series') }}"
+            class="form-control @error('image') is-invalid @enderror"
+            id="image"
+            name="image"
+            value="{{ old('image') }}"
         >
         <div class="invalid-feedback">
-            @error('series') {{ $message }} @enderror
+            @error('image') {{ $message }} @enderror
         </div>
     </div>
-  
     <div class="mb-3">
-        <label for="sale_date" class="form-label">Data Vendita</label>
-        <input
-            type="date"
-            class="form-control @error('sale_date') is-invalid @enderror"
-            id="sale_date"
-            name="sale_date"
-            value="{{ old('sale_date') }}"
-        >
-        <div class="invalid-feedback">
-            @error('sale_date') {{ $message }} @enderror
-        </div>
-    </div>
-  
-    <div class="mb-3">
-        <label for="peso" class="form-label">Paese</label>
+        <label for="country" class="form-label">Paese</label>
         <input
             type="text"
-            class="form-control @error('type') is-invalid @enderror"
-            id="type"
-            name="type"
-            value="{{ old('type') }}"
+            class="form-control @error('country') is-invalid @enderror"
+            id="country"
+            name="country"
+            value="{{ old('country') }}"
         >
         <div class="invalid-feedback">
-            @error('type') {{ $message }} @enderror
+            @error('country') {{ $message }} @enderror
         </div>
     </div>
   
     <div class="mb-3">
-        <label for="descrizione" class="form-label">Indirizzo</label>
+        <label for="address" class="form-label">Indirizzo</label>
         <textarea
-            class="form-control @error('description') is-invalid @enderror"
-            id="description"
+            class="form-control @error('address') is-invalid @enderror"
+            id="address"
             rows="3"
-            name="description">{{ old('description') }}</textarea>
+            name="address">{{ old('address') }}</textarea>
         <div class="invalid-feedback">
-            @error('description') {{ $message }} @enderror
+            @error('address') {{ $message }} @enderror
         </div>
     </div>
   
