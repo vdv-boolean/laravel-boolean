@@ -16,7 +16,15 @@ class TravelsTableSeeder extends Seeder
     {
         foreach (config('travels') as $travel) {
 
-            Travel::create([]);
+            Travel::create([
+
+                'date'    => $travel['date'],
+                'title'   => $travel['title'],
+                'text'    => $travel['text'],
+                'image'   => $travel['image'],
+                'country' => $travel['country'],
+                'andress' => $travel['andress'],
+            ]);
         }
     }
 }
