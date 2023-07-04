@@ -2,7 +2,6 @@
 
 @section('contents')
     <h1 class="text-center m-5">My Travels Diary</h1>
-
     <div class="container d-flex gap-5">
         @foreach ($travels as $travel)
             <div class="card">
@@ -23,6 +22,11 @@
                 </div>
             </div>
         @endforeach
-
     </div>
+    <a 
+        class="btn btn-primary mt-5"
+        href="{{ route('travels.create') }}"
+    >
+        ADD
+    </a>
 @endsection
