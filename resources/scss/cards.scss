@@ -13,8 +13,9 @@
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  .card svg {
-    width: 48px;
+  .card img {
+    width: 100%;
+    object-position: center;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
