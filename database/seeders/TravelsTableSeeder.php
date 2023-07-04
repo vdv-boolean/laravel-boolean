@@ -24,7 +24,7 @@ class TravelsTableSeeder extends Seeder
                 'text'    => $travel['text'],
                 'image'   => $travel['image'],
                 'country' => $travel['country'],
-                'andress' => $travel['andress'],
+                'address' => $travel['address'],
             ]);
         }
     }

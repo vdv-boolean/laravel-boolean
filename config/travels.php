@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
     [
@@ -7,7 +7,7 @@ return [
         "image" => "https://picsum.photos/seed/picsum/200/300",
         "country" => "China",
         "date" => "2020-03-24",
-        "andress" => "Republic of China",
+        "address" => "Republic of China",
     ],
 
     [
@@ -16,7 +16,7 @@ return [
         "image" => "https://picsum.photos/seed/picsum/200/300",
         "country" => "Thailand",
         "date" => "2022-02-06",
-        "andress" => "Thailand",
+        "address" => "Thailand",
     ],
 
     [
@@ -25,7 +25,7 @@ return [
         "image" => "https://picsum.photos/seed/picsum/200/300",
         "country" => "Vietnam",
         "date" => "2020-08-01",
-        "andress" => "Vietnam",
+        "address" => "Vietnam",
     ],
 
     [
@@ -34,7 +34,7 @@ return [
         "image" => "https://picsum.photos/seed/picsum/200/300",
         "country" => "India",
         "date" => "2019-06-16",
-        "andress" => "India",
+        "address" => "India",
     ],
 
     [
@@ -43,6 +43,6 @@ return [
         "image" => "https://picsum.photos/seed/picsum/200/300",
         "country" => "Cambodia",
         "date" => "2018-11-20",
-        "andress" => "Cambodia",
+        "address" => "Cambodia",
     ],
 ];
