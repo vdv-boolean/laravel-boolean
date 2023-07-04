@@ -1,5 +1,6 @@
 @extends('welcome')
 @section('contents')
+<h1>Aggiungi Travel</h1>
 <form method="POST" action="{{ route('travels.store') }}">
     @csrf
   <div class="mb-3">
