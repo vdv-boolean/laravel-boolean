@@ -13,7 +13,7 @@
         <form action="{{route('travels.destroy', ['travel' => $travel->id ])}}" method="post">
             @csrf
             @method('delete')
-            <button class="btn btn-primary">Delete</button>
+            <button class="btn btn-danger mt-2">DELETE</button>
         </form>
         
     </div>
