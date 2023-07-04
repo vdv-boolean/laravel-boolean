@@ -45,10 +45,8 @@ class TravelController extends Controller
         return redirect()->route('travels.show', ['comic' => $newTravels->id]);
     }
 
-    public function show($id)
+    public function show(Travel $travel)
     {
-        $travel = Travel::findOrFail($id);
-
         return view('travels.show', compact('travel'));
     }
 
